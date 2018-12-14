@@ -1,0 +1,20 @@
+<p>Routing and navigation concepts</p>
+
+<input type="button" name="navFstPgBtn" [routerLink]="['../firstpage']" value="First Page" />
+<hr>
+<p>
+<label>Navigate to 2nd page using Event Binding</label>
+</p>
+<input type="button" name="navSndPgBtn" value="Second Page"
+   (click)="NavSecondPage()"/>
+<hr>
+<p>
+  <label>Navigate to Third Page using paramater</label>
+</p>
+<input type="button" name="navThrdPgBtn" value="Third Page"
+  (click)="navThirdPage()" />
+<br>
+<input type="radio" name="radioBtn" (click)="SetValue('1')"/>
+<input type="radio" name="radioBtn" (click)="SetValue('2')"/>
+<input type="radio" name="radioBtn" (click)="SetValue('3')"/>
+  
